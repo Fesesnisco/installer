@@ -14,4 +14,4 @@ cd ~
 [ -d "nixos" ] || gh repo clone nixos
 
 cd ~/nixos
-sudo nixos-rebuild switch --flake .
+sudo nixos-rebuild switch --extra-experimental-features nix-command --extra-experimental-features flakes --flake .
